@@ -63,7 +63,7 @@
 			<section class="hero overlay">
 				<div class="container">
 					<h1 class="maine-title">Ефективні рішення для вашого бізнесу</h1>
-					<button class="hero-button" type="button">Замовити послугу</button>
+					<button data-modal-open class="hero-button" type="button">Замовити послугу</button>
 				</div>
 			</section>
 
@@ -114,12 +114,21 @@
 					<ul class="cpecializm-list">
 						<li class="list-item">
 							<img src="./images/box/box-1-img.jpg" alt="розробка desktop" width="370" height="294" />
+							<div class="cpecializm-overlay">
+								<p class="cpecializm-overtext">Десктопні додатки</p>
+							</div>
 						</li>
 						<li class="list-item">
 							<img src="./images/box/box-2-img.jpg" alt="розробка app" width="370" height="294" />
+							<div class="cpecializm-overlay">
+								<p class="cpecializm-overtext">Мобільні додатки</p>
+							</div>
 						</li>
 						<li class="list-item">
 							<img src="./images/box/box-3-img.jpg" alt="дизайн сайту" width="370" height="294" />
+							<div class="cpecializm-overlay">
+								<p class="cpecializm-overtext">Дизайнерські рішення</p>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -407,5 +416,16 @@
 		
 			</div>
 		</footer>
+
+		<!--Модальне вікно ЗАМОВИТИ ПОСЛУГУ-->
+
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<p></p>
+				<button class="hero-modal-close" data-modal-close>X</button>
+			</div>
+		</div>
+
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
